@@ -1,13 +1,17 @@
-#include "Fecha.h"
+#include "Jugador.h"
 
 
 int main() {
 
-	/*string annio, mes, dia, hora, minuto, segundo;
-	Fecha* f1 = new Fecha(annio, mes, dia, hora, minuto, segundo);
+	//Test jugador
+	Jugador* j = Jugador::getInstancia();
+	j->setUsuario("Flores_CR");
+	j->setPuntaje(j->getPuntaje() + 100);
+	cout << j->toString();
 
-	cout << f1->obtenerFecha(annio, mes, dia, hora, minuto, segundo) << endl;
 
-	system("pause");*/
-	return 0;
+
+
+
+	system("pause");
 }
